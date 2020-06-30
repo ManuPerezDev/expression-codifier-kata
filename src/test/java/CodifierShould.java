@@ -6,7 +6,7 @@ public class CodifierShould {
     /**
      * "1" -> "1"
      * "12" -> "*2" && "1234" -> "***4" && "123456" -> *****6
-     * "ñ" -> throws exception
+     * "ffff" -> "***f"
      */
 
     @Test

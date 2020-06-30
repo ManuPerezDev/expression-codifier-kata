@@ -12,7 +12,8 @@ public class Codifier {
             if(i == digits.length() - 1){
                 break;
             }
-            digits = digits.replace(digits.charAt(i), '*');
+
+            digits = digits.replace(String.valueOf(digits.charAt(i)), "*");
         }
         return digits;
     }
