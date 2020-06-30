@@ -29,6 +29,6 @@ public class CodifierShould {
     public void allow_character_duplicates(){
         Codifier codifier = new Codifier();
 
-        assertThat(codifier.codify("ffff")).isEqualTo("**f");
+        assertThat(codifier.codify("ffff")).isEqualTo("***f");
     }
 }
