@@ -24,4 +24,11 @@ public class CodifierShould {
         assertThat(codifier.codify("1234")).isEqualTo("***4");
         assertThat(codifier.codify("123456")).isEqualTo("*****6");
     }
+
+    @Test
+    public void allow_character_duplicates(){
+        Codifier codifier = new Codifier();
+
+        assertThat(codifier.codify("ffff")).isEqualTo("**f");
+    }
 }
