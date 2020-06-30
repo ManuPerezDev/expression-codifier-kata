@@ -17,7 +17,7 @@ public class CodifierShould {
     }
 
     @Test
-    public void if_more_than_one_digit_cover_all_except_last(){
+    public void if_more_than_one_digit_cover_all_with_asterisk_except_last_number(){
         Codifier codifier = new Codifier();
 
         assertThat(codifier.codify("12")).isEqualTo("*2");
